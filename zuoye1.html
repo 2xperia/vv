@@ -8,17 +8,18 @@
 </head>
 <body>
     <h1>毕业生信息</h1>
+    <form id="textform" method="get" action="">
     <fieldset style="width:400px;">
         <legend style="color: red">学生信息</legend>
-        <form>
-            姓名<input type="text" name="one" placeholder="请输入姓名"><span style="color:red;margin-left:10px;">*</span>
+        
+            <span>姓名</span><input type="text" name="one" placeholder="请输入姓名"><span style="color:red;margin-left:10px;">*</span>
             <br>
-            学号<input type="text" name="two" placeholder="请输入学号"><span style="color:red;margin-left:10px;">*</span>
+            <span>学号</span><input type="text" name="two" placeholder="请输入学号"><span style="color:red;margin-left:10px;">*</span>
             <br>
-            手机<input type="tel" name="three" placeholder="请输入手机号"><span style="color:red;margin-left:10px;">*</span>
+            <span>手机</span><input type="tel" name="three" placeholder="请输入手机号"><span style="color:red;margin-left:10px;">*</span>
             <br>
-            邮箱<input type="email" name="four" placeholder="请输入邮箱地址"><span style="color:red;margin-left:10px;">*</span>
-        </form>
+            <span>邮箱</span><input type="email" name="four" placeholder="请输入邮箱地址"><span style="color:red;margin-left:10px;">*</span>
+        
     </fieldset>
     <fieldset style="width:400px;">
         <legend style="color:red">录取情况</legend>
@@ -27,5 +28,6 @@
         入学时间<input type="date" name="seven" value="">
     </fieldset>
     <input type="submit" style="margin-top: 30px;" name="eight">
+    </form>`
 </body>
 </html>
