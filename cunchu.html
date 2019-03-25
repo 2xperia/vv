@@ -17,20 +17,23 @@
     
 </body>
 <script>
-    (function fg(){
+    window.onload = function (){
         var sd = document.getElementById("div");
-        for (let k = 0; k < localStorage.length; k++) {
+        for (var k = 0; k < localStorage.length; k++) {
             var sdf = document.createElement('span');
             console.log(localStorage.length);
             sdf.style.backgroundColor = "grey";
             sdf.style.float = "left";
             sdf.style.marginLeft = 5+"px";
             sdf.style.marginTop = 5+"px";
-            sdf.innerText = localStorage.key(k);
+            var cc = localStorage.key(k);
+            var val = localStorage.getItem(cc);
+            sdf.innerText = val;
+            sd.appendChild(sdf);
             
         }
         
-    })(); 
+    }; 
 </script>
 <script>
     var inp = document.getElementById("in");
@@ -81,6 +84,8 @@
         
         
     }
+
+    
     
 </script>
 
