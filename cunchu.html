@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input type="text" style="border-color: khaki;width: 200px;height: 31px;" placeholder="请输入想查找的商品" value="" id="in">
+    <input type="button"style="width:100px;height:31px;" value="搜索" id="sou">
+    <p style="margin-top:0px;">最近搜索</p>    
+    <div id="div" style="width:200px;">
+    </div>
+    <button style="display:none;position: absolute;top: 170px;left: 250px;" id="de"></button>
+    
+</body>
+<script>
+    (function fg(){
+        var sd = document.getElementById("div");
+        for (let k = 0; k < localStorage.length; k++) {
+            var sdf = document.createElement('span');
+            console.log(localStorage.length);
+            sdf.style.backgroundColor = "grey";
+            sdf.style.float = "left";
+            sdf.style.marginLeft = 5+"px";
+            sdf.style.marginTop = 5+"px";
+            sdf.innerText = localStorage.key(k);
+            
+        }
+        
+    })(); 
+</script>
+<script>
+    var inp = document.getElementById("in");
+    var sou = document.getElementById("sou");
+    var div = document.getElementById("div");
+    var vaa = "";
+    var num = 0;
+    var arr = new Array;i = 0;
+
+    sou.onclick = function(){
+        var ne = document.createElement("span");
+        i++;
+        var va = inp.value;
+        if (va != vaa) {
+            vaa = va;
+            localStorage.setItem(i,va);
+            for (let j = 0; j < localStorage.length; j++) {
+                var cc = localStorage.key(j);
+                var val = localStorage.getItem(cc);
+            }
+            ne.style.backgroundColor = "grey";
+            ne.style.float = "left";
+            ne.style.marginLeft = 5+"px";
+            ne.style.marginTop = 5+"px";
+            ne.id = "nne"+i;
+            ne.innerText = va;
+            div.appendChild(ne);
+        }
+        if (num == 0) {
+            var de = document.getElementById("de");
+            de.style.display = "inline";
+            de.style.height = 20+"px";
+            de.style.width = 20+"px";
+            de.style.textAlign = "center";
+            de.innerHTML = "X";
+            num = 1;
+        }
+
+        
+    }
+    
+    
+    de.onclick = function(){
+        while (div.lastChild) {
+            div.removeChild(div.lastChild);
+            localStorage.clear();
+        }
+        
+        
+    }
+    
+</script>
+
+</html> 
