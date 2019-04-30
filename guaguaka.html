@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .kuang{
+            height: 150px;
+            width: 440px;
+            text-align: center;
+        }
+        .zi{
+            font-size: 100px;
+            color: orange;
+        }
+        .canvas{
+            top: 8px;
+            left: 8px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="kuang">
+        <span id="nei" class="zi"></span>
+    </div>
+    <canvas id="can" class="canvas" width="440" height="150"></canvas>
+</body>
+<script>
+    var sui = Math.random();
+    var nei = document.getElementById('nei');
+    
+    if (sui<0.25) {
+        nei.innerHTML = "谢谢惠顾";
+    } else {
+        if (sui<0.5) {
+            nei.innerHTML = "一等奖";
+        } else {
+            if (sui<0.75) {
+                nei.innerHTML = "二等奖";
+            } else {
+                nei.innerHTML = "三等奖";
+            }
+        }
+    }
+
+    var canvas = document.getElementById("can");
+    var context = canvas.getContext("2d");
+
+    
+    context.beginPath();
+    context.rect(0,0,440,150);
+    context.fillStyle = "grey";
+    context.fill();
+    context.closePath();
+
+    context.globalCompositeOperation = "destination-out";
+    canvas.onmousedown = function(){
+        
+        canvas.onmousemove = function(event){
+            context.beginPath();
+            context.arc(event.pageX,event.pageY,20,Math.PI*1.5,Math.PI*0.5);
+            context.fillStyle = "red";
+            context.closePath();
+            context.fill();
+
+            context.beginPath();
+            context.arc(event.pageX,event.pageY,20,Math.PI*1.5,Math.PI*0.5,true);
+            context.fillStyle = "red";
+            context.closePath();
+            context.fill();
+            console.log(event.pageX,event.pageY-150);
+
+            var ima = context.getImageData(0,0,440,150);
+            console.log(ima.data);
+        }
+    }
+
+
+
+</script>
+</html>
+
+
+
