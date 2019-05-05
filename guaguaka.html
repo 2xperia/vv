@@ -71,10 +71,17 @@
             context.fillStyle = "red";
             context.closePath();
             context.fill();
-            console.log(event.pageX,event.pageY-150);
-
+            
+            var im = 0;
             var ima = context.getImageData(0,0,440,150);
-            console.log(ima.data);
+            for(var i = 0;i<ima.data.length;i+=4){
+                if(ima.data[i]==0){
+                    im++;
+                }
+            }
+            if(im>ima.data.length/4*0.85){
+                context.clearRect(0,0,440,150);
+            }
         }
     }
 
