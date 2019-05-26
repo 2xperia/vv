@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+			width:450px;
+			height: 600px;
+			position: relative;
+			left: 100px;
+			top: 100px;
+			overflow: hidden;
+		}
+        .box1{
+			position: absolute;
+            left: 0;
+            top: 0;
+            width:450px;
+            height: 600px;
+		}
+        .box3{
+			width: 450px;
+			height: 400px;
+			top:375px;
+			position: relative;
+            background-color: white;
+			
+		}@keyframes box1{
+            0%{
+                opacity: 1;
+                height: 600px;
+            }2%{
+                opacity: 0.5;height: 300px;
+            }40%{
+                opacity: 0.5;height: 300px;
+            }60%{
+                opacity: 0.5;height: 300px;
+            }80%{
+                opacity: 0.5;height: 300px;
+            }100%{
+                opacity:0.5;height: 300px;
+            }
+        }
+        @keyframes img{
+            0%{
+                transform: scale(1,1);
+            }2%{
+                transform: scale(1.4,1.4);
+            }40%{
+                transform: scale(1.4,1.4);
+            }60%{
+                transform: scale(1.4,1.4);
+            }80%{
+                transform: scale(1.4,1.4);
+            }100%{
+                transform: scale(1.4,1.4);
+            }
+        }
+        @keyframes box3{
+            0%{
+                top: 375px;
+                height: 400px;
+            }5%{
+                top: 300px;
+                height: 475px;
+            }10%{
+                top: 175px;
+                height: 625px;
+            }100%{
+                top: 175px;
+                height: 625px;
+            }
+
+        }
+        .box1:hover{
+            animation-name: box1;
+            animation-duration: 30s;
+            animation-timing-function: linear;
+        }
+        .img:hover{
+            animation-name: img;
+            animation-duration: 30s;
+            animation-timing-function: linear;
+        }
+        .box3:hover{
+            animation-name: box3;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+        }
+        
+        .box2{
+			position: absolute;
+			background-color: white;
+			bottom: 0px;
+			width: 446px;
+			height: 25px;
+			margin-left: 2px;
+			z-index: 100;
+		}
+        
+		.box4{
+			width: 450px;
+			height: 30px;
+			float: left;	
+		}
+        
+        .box5{
+			width: 450px;
+			height: 625px;
+            margin-top: 10px;
+		}
+        .box6{
+            position: absolute;
+			width: 75px;
+            height: 25px;
+            opacity: 1;
+            font-size: 19px;
+			text-align: center;
+		}
+        .p1{
+			float: left;
+			font-size: 15px;
+			color: gray;
+			margin-left: 25px;
+		}
+        .p2{
+			font-size: 20px;
+			color: black;
+			float: left;
+			margin-left: 15px;
+		}
+		.p3{
+			float: left;
+			font-size: 20px;
+			color: orange;
+			margin-left: 15px;
+		}
+        .p4{
+			font-size: 15px;
+			line-height: 40px;
+			float: left;
+			margin-left: 15px;
+            margin-top: 20px;
+		}.yuan{
+            background-color: orange;
+            height:40px;
+            width:50px;
+            border-radius:25px;
+            top:30px;left:350px;
+            font-size: 10px;
+            position: absolute;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <img src="./zhanqiao.jpg"width="450" height="450" class="img">
+            <div class="yuan">
+                    <span style="font-size: 13px;">15<br>五月</span>
+                </div>
+            <div class="box6">
+                <span>照片</span>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="box4">
+                <p class="p2">青岛栈桥</p>
+            </div>
+            <div class="box4">
+                <p class="p3">国家AAAA级旅游景区</p>
+            </div>
+            <span class="p4">青岛栈桥是青岛海滨风景区的景点之一，是国务院于1982年首批公布的国家级风景名胜区，也是首批国家AAAA级旅游景区 [1-2]  。
+                青岛栈桥位于游人如织的青岛中山路南端，桥身从海岸探入如弯月般的青岛湾深处。桥身供游人参观并在此停靠旅游船，由此乘船可看海上青岛</span>
+        </div>
+        <div class="box2">
+			<span class="p1">10分钟前</span>
+			<span class="p1">123阅读</span>
+		</div>
+        
+    </div>
+</body>
+    
+</html>
