@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+      @media only screen and (max-width: 750px){
+        .kuai{
+          display: block;
+          float: left;
+          margin-left: 120px;
+          }
+          .lin{
+            display: none;
+          }
+          .a{
+            margin-left: 0px;
+          }
+          .generic{
+            transform: scale(0.4,0.4);
+          }
+        }
+
+    </style>
+</head>
+<body>
+  <div style="background-color:#e1e1e1;width: 100%">
+    <div class="container">
+      <div style="width: 1200px;margin: 0 auto">
+        <nav  class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="mynav" style="background-color:#e1e1e1;border-color: #e1e1e1;">
+            <div class="container-fluid" style="height:40px;background-color:black;">
+              <div style="width: 1200px;margin:0 auto;padding-top: 5px;padding-bottom: 5px;">
+                <span style="float: right;;font-size: 20px;">请登录 | 注册</span>
+                <span style="font-size: 20px;float: right;">808-956-4686</span>
+                <img src="img/tell.png" style="float:right">
+              </div>
+            </div>
+            <div class="navbar-header" class="a" style="margin-left: 150px;">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-1">
+                    
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <button class="kuai" style="display: none"> dianji</button>
+                </button>
+                <a style="margin-right:30px;"><img src="img/logo.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-1" >
+                <ul class="nav navbar-nav nav-pills nav-stacked">
+                    <li class="active" >
+                        <a href="#shouye">首页</a>
+                    </li>
+                    <li>
+                        <a href="#hot">热门路线</a>
+                    </li>
+                    <li>
+                        <a href="#qian">签证推荐</a>
+                    </li>
+                    <li>
+                        <a href="#fate" id="navbarDrop1">
+                            使命愿景
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container" id="shouye" style="width: 1200px;padding-right: 0px;padding-left: 0px;margin: 0 auto;background-color:#e1e1e1;">
+        <div id="generic"  class="carousel slide" data-ride="carousel" style="transform: scale(1.27,1.27);margin-top: 150px;"> 
+            <!-- 轮播（Carousel）项目 -->
+           <div class="carousel-inner">
+             <div class="item active" style="margin: 0 auto;">
+               <img class="img-responsive" alt="First slide" src="img/banner.jpg" >
+               <div class="carousel-caption">
+               </div>
+             </div>
+             <div class="item" style="margin: 0 auto;">
+               <img class="img-responsive" alt="Second slide" src="img/banner2.jpg" >
+               <div class="carousel-caption">
+               </div>
+             </div>
+           </div>
+           <!-- 轮播（Carousel）导航 -->
+           <a class="left carousel-control" href="#generic" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left"></span>
+           </a>
+           <a class="right carousel-control" href="#generic" data-slide="next">
+             <span class="glyphicon glyphicon-chevron-right"></span>
+           </a>
+        </div>
+        <div style="background-color:#e1e1e1;padding-top: 110px;">
+          <div style="background-color: #16326d; width:1200px;height: 364px;">
+            <img src="img/Sbanner2.jpg" style="float: left">
+            <div style="text-align: center;padding-top: 50px;">
+              <img src="img/car.png">
+              <p style="font-size: 27px;color:white;margin-top: 7px;">车辆接送</p>
+              <div style="width: 120px;float: right;border-radius: 3px;border-color: red;margin-top: 20px;margin-right: 70px;"><span style="font-size:27px;color:white">查看详情</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid"> 
+          <div style="height: 80px;text-align:center;padding-top: 15px;" id="hot">
+            <span style="font-size: 25px;">热&nbsp;门&nbsp;线&nbsp;路</span><br>
+            <span>Popular tourist routes</span>
+          </div>
+          <div class="row"  style="position: relative">
+            <div class="col-sm-7 col-md-6"" style="transform: scale(1.07,1.15);margin-top: 35px;">
+              <div style="position: absolute;top:345px;background-color: black;width: 587px;height: 40px;padding-left: 60px">
+                <span style="color: white">海南三亚5天4晚，纯玩、4晚红树林度假王国</span><br>
+                <span style="color: white">￥2580 / 人起</span>
+              </div>
+              <a href="#" >
+                <img src="img/hot1.jpg" alt="...">
+              </a>
+            </div>
+            <div class=" col-md-5"  style="transform: scale(0.93,0.95)">
+              <div style="position: absolute;top:252px;background-color: black;width: 608px;height: 40px;opacity: 0.6;padding-left: 60px">
+                <span style="color: white">海南三亚5天4晚，纯玩、4晚红树林度假王国</span><br>
+                <span style="color: white">￥2580 / 人起</span>
+              </div>
+              <a href="#">
+                <img src="img/hot3.jpg" alt="...">
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-5" style="transform: scale(0.93,0.95);">
+              <div style="position: absolute;top:322px;background-color: black;width: 608px;height: 40px;opacity: 0.6;padding-left: 60px">
+                <span style="color: white">海南三亚5天4晚，纯玩、4晚红树林度假王国</span><br>
+                <span style="color: white">￥2580 / 人起</span>
+              </div>
+              <a href="#">
+                <img src="img/hot4.jpg" alt="...">
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-6" style="margin-top: -140px;transform: scale(1.07,1.25)">
+              <div style="position: absolute;top:400px;background-color: black;width: 587px;height: 40px;padding-left: 60px">
+                <span style="color: white">海南三亚5天4晚，纯玩、4晚红树林度假王国</span><br>
+                <span style="color: white">￥2580 / 人起</span>
+              </div>
+              <a href="#">
+                <img src="img/hot2.jpg" alt="...">
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-5" style="transform: scale(0.93,0.95)">
+              <div style="position: absolute;top:323px;background-color: black;width: 608px;height: 40px;opacity: 0.6;padding-left: 60px">
+                <span style="color: white">海南三亚5天4晚，纯玩、4晚红树林度假王国</span><br>
+                <span style="color: white">￥2580 / 人起</span>
+              </div>
+              <a href="#">
+                <img src="img/hot5.jpg" alt="...">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="qian">
+            <div style="height: 100px;text-align:center;padding-top: 15px;" id="hot">
+                <span style="font-size: 25px;">签  &nbsp;  证  &nbsp;  推 &nbsp;   荐</span><br>
+                <span style="height: 20px;">Visa recommendation</span><br>
+                <span>热门 ：日本  马来西亚  美国  意大利  加拿大  新加坡</span>
+            </div>
+            <div class="row" style="padding-bottom: 5px;">
+                <div class="col-sm-7 col-md-7" style="width: 350px;padding-left: 10px;">
+                  <div style="position: absolute;top:515px;background-color: black;width: 400px;height: 40px;opacity: 0.6;padding-left: 20px;padding-top: 10px;">
+                    <span style="color: white">日本旅行签证 ￥420/人</span>
+                  </div>
+                  <a href="#">
+                    <img src="img/visa1.jpg" alt="...">
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4" style="padding-left: 60px">
+                  <div style="position: absolute;top:235px;background-color: black;width: 395px;height: 40px;opacity: 0.6;padding-left: 20px;padding-top: 10px;">
+                    <span style="color: white">日本旅行签证 ￥420/人</span>
+                  </div>
+                  <a href="#">
+                    <img src="img/visa2.jpg" alt="...">
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4" style="padding-left: 50px;">
+                  <div style="position: absolute;top:235px;background-color: black;width: 395px;height: 40px;opacity: 0.6;padding-left: 20px;padding-top: 10px;">
+                    <span style="color: white">日本旅行签证 ￥420/人</span>
+                  </div>
+                  <a href="#" >
+                    <img src="img/visa3.jpg" alt="...">
+                  </a>
+                </div>
+                <div class="col-sm-7 col-md-4" style="padding-left: 60px">
+                  <div style="position: absolute;top:235px;background-color: black;width: 395px;height: 40px;opacity: 0.6;padding-left: 20px;padding-top: 10px;">
+                    <span style="color: white">日本旅行签证 ￥420/人</span>
+                  </div>
+                  <a href="#" >
+                    <img src="img/visa4.jpg" alt="...">
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4" style="padding-left: 50px;">
+                  <div style="position: absolute;top:235px;background-color: black;width: 395px;height: 40px;opacity: 0.6;padding-left: 20px;padding-top: 10px;">
+                    <span style="color: white">日本旅行签证 ￥420/人</span>
+                  </div>
+                  <a href="#" >
+                    <img src="img/visa5.jpg" alt="...">
+                  </a>
+                </div>
+              </div>
+              <div style="height: 130px;margin:0 auto;text-align: center">
+                <div style="border-color: black;margin-top:50px;">点击更多 > </div>
+              </div>
+        </div>
+    </div>
+    <div style="background: url(img/Bbanner.jpg);width:100%;height:345px;"></div>
+    <div  class="container" style="width: 1200px;padding-right: 0px;padding-left: 0px;margin: 0 auto;background-color:#e1e1e1">
+        <div id="fate" style="background: url(img/back.png);">
+          <div  style="height: 100px;text-align:center;padding-top: 15px;">
+            <span  style="font-size: 35px;">使命与愿景</span><br>
+            <span style="padding-top: 10px;">让旅游回归本质，体验纯粹旅游</span>
+          </div>
+          <div style="position: relative;">
+            <div style="background-color:#1c5080;">
+              <img src="img/mission1.jpg">
+            </div>
+            <div style="position: absolute;top:60px;left:560px;width: 522px;text-align: center">
+              <div style="height: 70px;">
+                  <span style="font-size: 30px;color: wheat">服务理念及优势</span>
+              </div>
+              <span style="color: wheat">英华逸游”通过重新打造旅游全程中的产品线路设计、出行交通方案、陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提供性价比高的产品和服务。</span>
+            </div>
+            <div>
+              <img src="img/mission2.jpg" alt="">
+            </div>
+            <div class="lan" style="background-color :#1c5080;height: 340px;margin-top: 4px;position: relative;">
+            <div>
+              <div style="position: absolute;top:47px;left:180px;">
+                <div>
+                    <img src="img/rorate.png">  
+                </div>
+                <div style="position: absolute;top:70px;left:62px;">
+                    <img src="img/icon1.png" alt="">
+                </div>
+              </div>
+              <div style="position: absolute;left: 150px;top: 265px; ">
+                <span style="font-size: 14px;color: white">旅游达人精心设计，基于口碑反复打磨，<br> 全网最好，敢跟任何产品比</span>
+              </div>
+            </div>
+            <div>
+              <div  style="position: absolute;top:47px;left:507px;">
+                  <div>
+                      <img src="img/rorate.png">  
+                  </div>
+                  <div style="position: absolute;top:65px;left:70px;">
+                      <img src="img/icon2.png" alt="">
+                  </div>
+              </div>
+              <div style="position: absolute;left: 520px;top: 265px;text-align: center ">
+                <span style="font-size: 14px;color: white">不推自费<br> 不进垃圾购物点和伪景点</span>
+              </div>
+            </div>
+            <div>
+              <div  style="position: absolute;top:47px;left:838px;">
+                  <div>
+                      <img src="img/rorate.png">  
+                  </div>
+                  <div style="position: absolute;top:65px;left:70px;">
+                      <img src="img/icon3.png" alt="">
+                  </div>
+              </div>
+              <div style="position: absolute;left: 840px;top: 265px;text-align: center ">
+                <span style="font-size: 14px;color: white">独立成团不敢拼，<br> 只跟亲朋好友一起玩，每天发团</span>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="lin" style="background-color:black;border-color: white;height: 300px;">
+      <div style="width: 1200px;margin: 0 auto;padding-top: 10px;;height: 50px;">
+        <span style="color: white">合作伙伴</span>&nbsp;&nbsp;&nbsp;
+        
+          <img src="" alt="">
+          <span style="color: white">携程网</span>
+        
+          <img src="" alt="">
+          <span style="color: white">阿里飞猪</span>
+        
+          <img src="" alt="">
+          <span style="color: white">去哪儿</span>
+        
+          <img src="" alt="">
+          <span style="color: white">苏州旅游局</span>
+        
+      </div>
+      <div  style="width: 1200px;margin: 0 auto;padding-top: 10px;;height: 70px;">
+        <div style="height: 50px;">
+          <span style="color: white">热门位置</span> &nbsp;&nbsp;&nbsp;
+          <span style="color: white">韩国 &nbsp; 日本 &nbsp; 菲律宾 &nbsp; 越南 &nbsp; 老挝 &nbsp; 柬埔寨 &nbsp; 泰国 &nbsp; 马来西亚 &nbsp; 
+            新加坡 &nbsp; 印度尼西亚 &nbsp; 印度 &nbsp; 斯里兰卡 &nbsp; 土耳其 &nbsp; 阿联酋 &nbsp; 西班牙 &nbsp; 意大利 &nbsp; 希腊 &nbsp; 法国 &nbsp; 比利时 &nbsp; 荷兰
+          </span><br>&nbsp;&nbsp;&nbsp;
+          <span style="color: white;margin-left: 60px;">
+            英国 &nbsp; 瑞士 &nbsp; 奥地利 &nbsp; 德国 &nbsp; 匈牙利 &nbsp; 俄罗斯 &nbsp; 捷克 &nbsp; 芬兰 &nbsp; 葡萄牙 &nbsp; 冰岛 &nbsp; 美国 &nbsp; 加拿大 &nbsp; 巴西 &nbsp;
+             阿根廷 &nbsp; 澳大利亚 &nbsp; 新西兰
+          </span>
+        </div>
+      </div>
+      <div style="width: 1200px;margin: 0 auto;padding-top: 10px;;height: 50px;">
+        <span style="color: white">主题服务</span>&nbsp;&nbsp;&nbsp;
+        <span style="color: white">海岛度假 &nbsp; 历史文化 &nbsp; 探索冒险 &nbsp; 没数购物 &nbsp; 都市生活 &nbsp; 海外留学 &nbsp; 游轮度假 &nbsp; 蜜月摄影 &nbsp; 亲子乐园</span>        
+      </div>
+      <div  style="width: 1200px;margin: 0 auto;padding-top: 10px;;height: 70px;">
+        <div style="height: 50px;">
+            <span style="color: white">友情链接</span>&nbsp;&nbsp;&nbsp;
+            <span style="color: white">
+              马蜂窝 &nbsp; 穷游 &nbsp; booking &nbsp; 苏州旅游网 &nbsp; 驴友网 &nbsp; 吾爱全球签证中心 &nbsp; 酒店团购 &nbsp; 携程旅游攻略 &nbsp; 天巡直航在线 &nbsp; 
+              满天飞旅游网 &nbsp; 中国旅游网 &nbsp; 熬了网 &nbsp; 背包兔旅行行程
+            </span><br>&nbsp;&nbsp;&nbsp;
+            <span style="color: white;margin-left: 55px;">出境旅游 &nbsp; 国际酒店 &nbsp; 广州旅行社 &nbsp; 出境旅游 &nbsp; 517旅行 &nbsp; 花生游 &nbsp; 家园网 &nbsp; 海外婚礼</span>
+        </div>
+      </div>
+    </div>
+    <div  style="background-color:black;height: 120px;border:wheat;padding-top: 60px;">
+      <div style="text-align: center;">
+        <span style="color: white;margin-top: 20px;">苏ICP备14019690号、2014-2017   @苏州英华国际旅游有限公司 版权所有</span>
+      </div>
+    </div>
+  </div>
+    
+</body>
+<script src="js/jQuery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
