@@ -7,7 +7,33 @@
     <title>Document</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="text/javascript">
+      $(function () {
+        $('body').scrollspy({ target:'#navbar-example' });
+      })
+    </script>
     <style>
+      .lan{
+        background-color :#1c5080;height: 340px;margin-top: 4px;position: relative;
+      }
+      .lan1{
+        position: absolute;top:47px;left:180px;
+      }
+      .bai1{
+        position: absolute;left: 150px;top: 265px;
+      }
+      .lan2{
+        position: absolute;top:47px;left:507px;
+      }
+      .bai2{
+        position: absolute;left: 520px;top: 265px;text-align: center ;
+      }
+      .lan3{
+        position: absolute;top:47px;left:838px;
+      }
+      .bai3{
+        position: absolute;left: 840px;top: 265px;text-align: center;
+      }
       @media only screen and (max-width: 750px){
         .kuai{
           display: block;
@@ -23,11 +49,35 @@
           .generic{
             transform: scale(0.4,0.4);
           }
+          .lan{
+            background-color :blue;height:740px;margin-top: 4px;position: relative;
+          }
+          .lan1{
+            position: absolute;
+            top:50px;
+            left:50px;
+          }
+          .lan2{
+            position: absolute;
+            top: 275px;
+            left: 50px;
+          }.lan3{
+            position: absolute;
+            top: 500px;
+            left: 50px;
+          }.bai1{
+            position: absolute;
+            top:120px;
+            left:300px;
+          }
+          .bai2{position: absolute;left: 300px;top: 350px;text-align: center ;
+          }.bai3{position: absolute;left: 300px;top: 600px;text-align: center;
+          }.suo1{transform: scale(0.625,0.625);position: absolute;top: 82px;left: 3px;height: 200px;}
         }
 
     </style>
 </head>
-<body>
+<body  data-spy="scroll">
   <div style="background-color:#e1e1e1;width: 100%">
     <div class="container">
       <div style="width: 1200px;margin: 0 auto">
@@ -227,12 +277,11 @@
               </div>
               <span style="color: wheat">英华逸游”通过重新打造旅游全程中的产品线路设计、出行交通方案、陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提供性价比高的产品和服务。</span>
             </div>
-            <div>
+            <div class="suo1">
               <img src="img/mission2.jpg" alt="">
             </div>
-            <div class="lan" style="background-color :#1c5080;height: 340px;margin-top: 4px;position: relative;">
-            <div>
-              <div style="position: absolute;top:47px;left:180px;">
+            <div class="lan">
+              <div class="lan1" style="">
                 <div>
                     <img src="img/rorate.png">  
                 </div>
@@ -240,12 +289,10 @@
                     <img src="img/icon1.png" alt="">
                 </div>
               </div>
-              <div style="position: absolute;left: 150px;top: 265px; ">
+              <div class="bai1" >
                 <span style="font-size: 14px;color: white">旅游达人精心设计，基于口碑反复打磨，<br> 全网最好，敢跟任何产品比</span>
               </div>
-            </div>
-            <div>
-              <div  style="position: absolute;top:47px;left:507px;">
+              <div class="lan2"  style="">
                   <div>
                       <img src="img/rorate.png">  
                   </div>
@@ -253,12 +300,10 @@
                       <img src="img/icon2.png" alt="">
                   </div>
               </div>
-              <div style="position: absolute;left: 520px;top: 265px;text-align: center ">
+              <div  class="bai2">
                 <span style="font-size: 14px;color: white">不推自费<br> 不进垃圾购物点和伪景点</span>
               </div>
-            </div>
-            <div>
-              <div  style="position: absolute;top:47px;left:838px;">
+              <div  class="lan3" >
                   <div>
                       <img src="img/rorate.png">  
                   </div>
@@ -266,9 +311,8 @@
                       <img src="img/icon3.png" alt="">
                   </div>
               </div>
-              <div style="position: absolute;left: 840px;top: 265px;text-align: center ">
+              <div  class="bai3">
                 <span style="font-size: 14px;color: white">独立成团不敢拼，<br> 只跟亲朋好友一起玩，每天发团</span>
-              </div>
               </div>
             </div>
           </div>
